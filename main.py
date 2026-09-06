@@ -9,7 +9,7 @@ API_KEY = os.environ.get('ODDS_API_KEY', '8b2fbbdc39c3e6a9ee855ffb9202968a')
 SPORT = 'soccer_epl' # Example: English Premier League (or soccer_south_africa_psl)
 
 def fetch_live_fixtures():
-    url = f'https://api.the-odds-api.com/v4/sports/{SPORT}/odds/?apiKey={API_KEY}&regions=eu&markets=h2h'
+    url = f'https://api.the-odds-api.com/v4/sports/{SPORT}/odds/?apiKey={8b2fbbdc39c3e6a9ee855ffb9202968a}&regions=eu&markets=h2h'
     try:
         response = requests.get(url)
         if response.status_code == 200:
