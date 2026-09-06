@@ -5,7 +5,7 @@ import requests
 app = Flask(__name__)
 
 # Replace with your actual key from the-odds-api.com
-API_KEY = os.environ.get('8b2fbbdc39c3e6a9ee855ffb9202968a')
+API_KEY = os.environ.get('ODDS_API_KEY', '8b2fbbdc39c3e6a9ee855ffb9202968a')
 SPORT = 'soccer_epl' # Example: English Premier League (or soccer_south_africa_psl)
 
 def fetch_live_fixtures():
